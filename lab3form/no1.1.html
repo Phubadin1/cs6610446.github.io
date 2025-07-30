@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+
+    <h3>ชื่อเต็ม/ย่อสาขาวิชา</h3>
+    <input type="text" name="major" value="">
+
+    <h3>จำนวนเงินที่จะโอน</h3>
+    <input type="number" name="amount" value="">
+
+    <h3>อาหารที่ชื่นชอบ 5 ชนิดจากมากไปน้อย</h3>
+    <p>อันดับ 1: <input type="text" name="food1"></p>
+    <p>อันดับ 2: <input type="text" name="food2"></p>
+    <p>อันดับ 3: <input type="text" name="food3"></p>
+    <p>อันดับ 4: <input type="text" name="food4"></p>
+    <p>อันดับ 5: <input type="text" name="food5"></p>
+
+    <h3>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</h3>
+    <p>เดือนที่ 1: <input type="number" name="bill1"></p>
+    <p>เดือนที่ 2: <input type="number" name="bill2"></p>
+    <p>เดือนที่ 3: <input type="number" name="bill3"></p>
+
+    <h3>รหัสบัตรประชาชน</h3>
+    <input type="text" name="idcard" pattern="\d{13}" maxlength="13" placeholder="เลข 13 หลัก">
+
+    <h3>ความพึงพอใจของหนังสือเล่มนี้</h3>
+    <p><input type="radio" name="satisfaction" value="2"> ชอบ</p>
+    <p><input type="radio" name="satisfaction" value="1"> เฉยๆ</p>
+    <p><input type="radio" name="satisfaction" value="0"> ไม่ชอบ</p>
+
+    <h3>อาการป่วย</h3>
+    <textarea name="symptoms" rows="3" cols="40"></textarea>
+
+    <h3>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่:</h3>
+    <input type="radio" name="virus" value="yes"> ได้รับ
+    <input type="radio" name="virus" value="no"> ไม่ได้รับ
+
+    <h3>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</h3>
+    <p>วันเวลาเริ่มเข้าเรียน: <input type="datetime-local" name="start_datetime" value=""></p>
+    <p>วันเวลาสิ้นสุดการเรียน: <input type="datetime-local" name="end_datetime" value=""></p>
+
+    <h3>วันเวลาที่ต้องไปพบแพทย์</h3>
+    <p>
+      <input type="datetime-local" name="calltodoctor" value="">
+    </p>
+
+    <input type="submit" value="ส่งข้อมูล">
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Pattern Validation</title>
+</head>
+<body>
+
+  <h2>แบบฟอร์มตรวจสอบ Pattern</h2>
+  <form action="#" method="post">
+    
+    <h3>1. รหัสผ่าน (อย่างน้อย 5 ตัว ต้องมีตัวใหญ่ ตัวเล็ก ตัวเลข และอย่างน้อยชนิดละ1อักขระ)</h3>
+    <input type="password" name="password"
+      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$"
+      title="รหัสผ่านต้องมีอย่างน้อย 5 ตัว และมีตัวพิมพ์ใหญ่ ตัวพิมพ์เล็ก และตัวเลข อย่างน้อย 1 ตัว"
+      placeholder="เช่น Abc12" required>
+    
+    <br><br>
+
+    <h3>2. บ้านเลขที่ (เช่น 69 หรือ 235/4)</h3>
+    <input type="text" name="address"
+      pattern="^\d+(\/\d+)?$"
+      title="กรอกเฉพาะตัวเลข หรือ ตัวเลข/ตัวเลข เช่น 235/4"
+      placeholder="เช่น 235/4" required>
+
+    <br><br>
+
+    <h3>3. รหัสสินค้า (ตัวใหญ่ 3 ตัว + ตัวเลข 2 ตัว เช่น AAA89)</h3>
+    <input type="text" name="product_code"
+      pattern="^[A-Z]{3}\d{2}$"
+      title="กรุณากรอกตัวอักษรภาษาอังกฤษพิมพ์ใหญ่ 3 ตัว ตามด้วยตัวเลข 2 ตัว เช่น AAA89"
+      placeholder="เช่น ABC12" required>
+
+    <br><br>
+
+    <h3>4. ชื่อ - นามสกุล (ภาษาไทยเท่านั้น)</h3>
+    <input type="text" name="thai_name"
+      pattern="^[ก-๙\s]+$"
+      title="กรอกเฉพาะอักษรไทยเท่านั้น"
+      placeholder="เช่น สมชาย ใจดี" required>
+
+    <br><br>
+    
+  </form>
+
+</body>
+</html>

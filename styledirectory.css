@@ -1,0 +1,73 @@
+/* ส่วนหลักของแถบนำทาง */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+/* เรียงเมนูหลักแนวนอน */
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ลิงก์ในเมนูหลัก */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Hover แล้วเปลี่ยนสีลิงก์ */
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* กล่องเมนูย่อยซ่อนอยู่ */
+.dropdownmenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* กล่องเมนูย่อยแสดงเมื่อ hover */
+.dropdown:hover .dropdownmenu {
+  display: block;
+}
+
+/* ตำแหน่งของเมนูหลัก */
+.dropdown {
+  position: relative;
+}
+
+/* เมนูย่อยแต่ละรายการ */
+.dropdownmenu li {
+  padding: 0;
+}
+
+/* Hover เมนูย่อย */
+.dropdownmenu li a:hover {
+  background-color: #666;
+  border-radius: 0;
+}
+
+/* ลบ margin/padding เริ่มต้นของ body และ header */
+body, header {
+  margin: 0;
+  padding: 0;
+}
